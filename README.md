@@ -50,5 +50,22 @@ ptask PlayerTaskName[interval](playerid)
 > [!NOTE]
 > Player tasks do not run for NPCs.
 
+### Example
+
+```pawn
+
+#include <pp-tasks>
+
+ptask HealPlayer[5_000](playerid)
+{
+    new Float:health;
+    GetPlayerHealth(playerid, health);
+
+    new Float:bonus = 5.0;
+    if ((health + bonus) <= 100.0)
+        SetPlayerHealth(playerid, (health + bonus));
+}
+```
+
 ## Thanks to
 - [IllidanS4](//github.com/IllidanS4) — for creating [PawnPlus](//github.com/IS4Code/PawnPlus), the core library behind this include.
