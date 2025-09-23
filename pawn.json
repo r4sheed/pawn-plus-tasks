@@ -1,0 +1,7 @@
+{
+	"user": "r4sheed",
+	"repo": "pawn-plus-tasks",
+	"tag": "0.0.1",
+	"entry": "test.pwn",
+	"output": "gamemodes/test.amx"
+}
