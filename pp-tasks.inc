@@ -176,6 +176,9 @@ static void:PPTasks_StartPlayerTasks(playerid)
  */
 static void:PPTasks_StopPlayerTasks(playerid)
 {
+	if (!map_has_key(INC_gsPlayerTimers, playerid))
+		return;
+		
 	new List:list;
 	if (!map_get_safe(INC_gsPlayerTimers, playerid, list)) 
 		return;
