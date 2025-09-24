@@ -48,7 +48,7 @@
  * </summary>
  * <param name="name">The name of the task function.</param>
  * <param name="interval">Interval in milliseconds.</param>
- * <param name="params">Optional parameters passed to the task function.</param>
+ * <param name="playerid">The player ID passed to the task function.</param>
  */
 #define ptask%0[%1](%2) \
 	forward @pPT_%0_%1(%2); \
